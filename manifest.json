@@ -63,6 +63,14 @@
       "suggested_key": {
         "default": "Ctrl+Shift+9"
       }
+    },
+    "thumbs-up": {
+      "description": "Thumbs Up",
+      "global": true
+    },
+    "thumbs-down": {
+      "description": "Thumbs Down",
+      "global": true
     }
   }
 }

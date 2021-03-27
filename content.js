@@ -1,23 +1,24 @@
 chrome.runtime.sendMessage({command: "register"});
 chrome.runtime.onMessage.addListener(function (message) {
-	function click_button(cls){
-		let btn = document.getElementsByClassName(cls);
-		if(btn.length > 0){
-			btn[0].click();
+	function click_button(selector){
+		let btn = document.querySelector(selector);
+		console.log("Targeted Element: ", btn);
+		if(btn){
+			btn.click();
 		}
 	}
 	let vol = document.getElementById('volume-slider');
 	console.log(message.command);
 	switch (message.command) {
 		case "next-track":
-			click_button('next-button');
+			click_button('.next-button');
 			break;
 		case "previous-track":
-			click_button('previous-button');
+			click_button('.previous-button');
 			break;
 		case "play-pause":
 		case "stop":
-			click_button('play-pause-button');
+			click_button('.play-pause-button');
 			break;
 		case "volume-up":
 			vol.setAttribute('value', Math.min(parseInt(vol.getAttribute('value')) + 10, 100).toString());
@@ -32,6 +33,12 @@ chrome.runtime.onMessage.addListener(function (message) {
 		case "volume-down":
 			vol.setAttribute('value', Math.max(parseInt(vol.getAttribute('value')) - 10, 0).toString());
 			console.log(vol.value);
+			break;
+		case "thumbs-down":
+			click_button('.middle-controls .dislike');
+			break;
+		case "thumbs-up":
+			click_button('.middle-controls .like');
 			break;
 	}
 });
