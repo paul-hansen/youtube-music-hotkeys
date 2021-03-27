@@ -8,6 +8,10 @@
   "icons": {
     "128": "icon128.png"
   },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
   "background": {
     "scripts": ["background.js"],
     "persistent": false
@@ -17,6 +21,9 @@
       "matches": ["https://music.youtube.com/*"],
       "js": ["content.js"]
     }
+  ],
+  "permissions": [
+    "activeTab"
   ],
   "browser_action": {
 

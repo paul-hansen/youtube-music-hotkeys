@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <style>
+            :root {
+                --bg-color: white;
+                --border-color: #F3F3F3;
+                --btn-bg-color: #e81a1a;
+            }
+            .btn {
+                -webkit-user-drag: none;
+                border-radius: 6px;
+                padding: 8px 16px;
+                background-color: var(--btn-bg-color);
+                border: none;
+                box-shadow: -0.5px 3px 0 3px #790000;
+                color: white;
+                text-decoration: none;
+                font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
+                font-size: 13px;
+            }
+            .btn:hover {
+                background: var(--btn-bg-color) linear-gradient(rgba(0, 0, 0, .08), rgba(0, 0, 0, .08))
+            }
+            .btn:active {
+                box-shadow: -0.5px 2px 0 3px #790000;
+                transform: translateY(3px);
+            }
+            body {
+                box-sizing: border-box;
+                margin: 0;
+                background-color: var(--bg-color);
+                font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
+                font-size: 13px;
+            }
+            .heading {
+                font-weight: 400;
+            }
+            .panel {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 12px 20px;
+                border-top: solid 1px var(--border-color);
+            }
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --bg-color: #292A2D;
+                    --border-color: rgba(255, 255, 255, .1);
+                }
+                body {
+                    color: #E8EAED;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="panel">
+            <div class="heading">
+                Found this helpful?
+            </div>
+            <a class="btn" href="https://www.paypal.com/donate?hosted_button_id=NGT2AJ6WXEXEQ" target="_blank">
+                Donate
+            </a>
+        </div>
+        <div class="panel">
+            <div class="heading">
+                Open Chrome shortcuts to set hotkeys
+            </div>
+            <a href="#" id="open_shortcuts" class="btn">Shortcuts</a>
+            <script src="options.js"></script>
+        </div>
+    </body>
+</html>
