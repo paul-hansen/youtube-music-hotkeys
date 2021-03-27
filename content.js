@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener(function (message) {
 		case "stop":
 			click_button('.play-pause-button');
 			break;
-		case "volume-up":
+		case "volume-a-up":
 			vol.setAttribute('value', Math.min(parseInt(vol.getAttribute('value')) + 10, 100).toString());
 			console.log(vol.value);
 			let event = new UIEvent("change", {
@@ -37,7 +37,7 @@ chrome.runtime.onMessage.addListener(function (message) {
 		case "thumbs-down":
 			click_button('.middle-controls .dislike');
 			break;
-		case "thumbs-up":
+		case "thumbs-a-up":
 			click_button('.middle-controls .like');
 			break;
 	}

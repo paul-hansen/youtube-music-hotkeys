@@ -50,7 +50,7 @@
         "default": "MediaStop"
       }
     },
-    "volume-up": {
+    "volume-a-up": {
       "description": "Volume Up",
       "global": true,
       "suggested_key": {
@@ -64,7 +64,7 @@
         "default": "Ctrl+Shift+9"
       }
     },
-    "thumbs-up": {
+    "thumbs-a-up": {
       "description": "Thumbs Up",
       "global": true
     },
