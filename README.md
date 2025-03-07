@@ -2,9 +2,9 @@ A Google Chrome extension for setting global hotkeys to control YouTube music.
 No longer works due to Google breaking all Chrome extensions in their fight against ad blockers.
 
 It's a very simple extension but it had just under 11,000 users on the chrome store before being removed.
-When Google decided to drop manifest V2 support, I couldn't spend the time to upgrade it so it was eventually made defunct by Google and I was starting to get bad reviews about that so I delisted it from the store.
+When Google decided to drop manifest V2 support, I couldn't spend the time to upgrade it so it was eventually made defunct by Google and it was starting to get negative reviews so I delisted it from the store.
 
-It's possible I'll bring it back someday but money is tight right now so I need to focus on things that are sources of income.
+It's possible I'll bring it back someday but right now I need to focus on things that are sources of income.
 
 Personally I made this because when YouTube music launched it didn't support media hotkeys at all, they do now so I'm kind of confused why so many people were still using this.
 I would guess it was so you can use different key bindings or perhaps it worked around some Windows hotkeys handling problems. I just use my media keys and Linux now.
